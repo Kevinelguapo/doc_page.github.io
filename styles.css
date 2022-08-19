@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+body {
+  background-color: #222830;
+  color: white;
+}
+#navbar {
+  background-color: #395B64;
+  position: fixed;
+  display: block;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 20%;
+  min-width: 175px;
+  border: solid #E7F6F2 3px;
+  border-radius: 5px;
+  padding:0;
+}
+#navbar header {
+  display: block;
+  background-color: 222830;
+  color: #E7F6F2;
+  border-bottom: solid #E7F6F2 1px;
+  text-align: center;
+  font-size: 1.2rem;
+  position: relative;
+  top: 0px;
+  margin: 0 auto 10px;
+  padding: 10px;
+}
+#navbar .links {
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto; 
+  flex-wrap: wrap; 
+}
+#navbar .links a {
+  background-color: #E7F6F2; 
+  color: #112031;
+  border-radius: 5px;
+  flex-grow: 1;
+  text-align: center;
+  margin: 10px 5px;
+  padding: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#navbar .links a:hover {
+  background-color: #112031;
+  color: white;
+}
+#main-doc {
+  position: absolute;
+  left: calc(22%);
+  padding: 1rem;
+}
+.main-section header {
+    margin-top: 0;
+    padding-top: 10px;
+  }
+#main-doc .main-section article {
+  padding: 15px;
+}
+#main-doc .main-section article code {
+  display: block;
+  color: white;
+  background-color: #345B63;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+@media (max-width:800px) {
+  
+  #navbar {
+    position: sticky; 
+    display: block;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    z-index: 5;
+    padding: 0;
+  }
+  #navbar .links {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto; 
+    flex-wrap: wrap; 
+    margin: 0;
+    width: 100%;
+    height: auto; 
+    padding: 5 0;
+  }
+
+  #navbar .links a {
+    color: #112031;
+    border-radius: 5px;
+    flex-grow: 1;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #navbar header {
+    display: block;
+    top: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 10px 0;
+    /* background-color: #112031;
+    color: #EFFFFD; */
+  }
+  #main-doc {
+  position: relative;
+  left: 0;
+  top: 0;
+  padding: 0rem;
+  /* margin: 8rem 1rem; */  
+  }
+  .main-section header {
+    margin-top: 0;
+    padding-top: 140px;
+  }
+}
+@media (max-width:588px) {
+  .main-section header {
+    margin-top: 0;
+    padding-top: 180px;
+  }
+}
+@media (max-width:443px) {
+  .main-section header {
+    margin-top: 0;
+    padding-top: 220px;
+  }
+}
